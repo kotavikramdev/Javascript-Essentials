@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day-2 JS (Day and Time)</title>
+    </head>
+    <body>
+        <h1>Javascript Program</h1>
+        <h2>Printing Day and Time</h2>
+        <script>
+            var today, day, daylist, hours, minutes, seconds;
+            today = new Date();
+            day = today.getDay();
+            daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+            hours = today.getHours();
+            minutes = today.getMinutes();
+            seconds = today.getSeconds();
+            var prepand = (hours >= 12) ? " PM " : " AM ";
+            hours = (hours >= 12) ? hours - 12 : hours;
+            if (hours === 0 && prepand === ' PM ') { 
+                if (minutes === 0 && seconds === 0) { 
+                    hours = 12;
+                    prepand = ' Noon';
+                } 
+                else { 
+                    hours = 12;
+                    prepand = ' PM';
+                } 
+            } 
+            if (hours === 0 && prepand === ' AM ') { 
+                if (minutes === 0 && seconds === 0) { 
+                    hours = 12;
+                    prepand = ' Midnight';
+                } 
+                else { 
+                    hours = 12;
+                    prepand = ' AM';
+                } 
+            } 
+            document.write("Today is : " + daylist[day]);
+            document.write('<br/>');
+            document.write("Current time is : ");
+            document.write(hours + prepand + " : " + minutes + " : " + seconds);
+        </script>
+    </body>
+</html>

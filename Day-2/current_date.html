@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day-2 JS (Current Date)</title>
+    </head>
+    <body>
+        <h1>Javascript Program</h1>
+        <h2>Printing Current Date in different formats</h2>
+        <script>
+            var today, dd, mm, yyyy;
+            today = new Date();
+            dd = today.getDate();
+            mm = today.getMonth()+1; 
+            yyyy = today.getFullYear();
+            if(dd<10) {
+                dd='0'+dd;
+            } 
+            if(mm<10) {
+                mm='0'+mm;
+            } 
+            today = mm+'-'+dd+'-'+yyyy;
+            document.write("mm-dd-yyyy : "+today);
+            document.write('<br/>');
+            today = mm+'/'+dd+'/'+yyyy;
+            document.write("mm/dd/yyyy : "+today);
+            document.write('<br/>');
+            today = dd+'-'+mm+'-'+yyyy;
+            document.write("dd-mm-yyyy : "+today);
+            document.write('<br/>');
+            today = dd+'/'+mm+'/'+yyyy;
+            document.write("dd/mm/yyyy : "+today);
+        </script>
+    </body>
+</html>
