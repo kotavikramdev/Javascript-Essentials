@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day-1 Assignment-3</title>
+    </head>
+    <body>
+        <h1>Day-1 Assignment-3</h1>
+        <h2>Javascript Datatypes</h2>
+        <p>In JavaScript there are two different kinds of data: primitives, and objects.</p>
+        <p>Primitive Datatypes: A primitive is simply a data type that is not an object, and has no methods.</p>
+        <p>There are Six Primitive datatypes:</p>
+        <ul>
+            <li>Boolean</li>
+            <li>Number</li>
+            <li>String</li>
+            <li>Null</li>
+            <li>Undefined</li>
+            <li>Symbol</li>
+        </ul>
+        <p>Object Datatypes: An object is a collection of properties. These properties are stored in key/value pairs. Properties can reference any type of data, including objects and/or primitive values.</p>
+        <h2>Examples:</h2>
+        <script>
+            // Boolean
+            var boo1 = true;
+            var boo2 = false;
+            document.write("Value of boo1 = "+boo1);
+            document.write('<br/>');
+            document.write("Value of boo2 = "+boo2);
+            document.write('<br/>');
+
+            // Number
+            var num = 32;
+            document.write("Value of num = "+num);
+            document.write('<br/>');
+
+            // String
+            var str = 'Javascript Essentials';
+            document.write("Value of str = "+str);
+            document.write('<br/>');
+
+            // Null
+            var nothing = null;
+            document.write("Value of nothing = "+nothing);
+            document.write('<br/>');
+
+            // Undefined
+            var testVar;
+            document.write("Value of testVar = "+testVar);
+            document.write('<br/>');
+            
+            // Symbol
+            const mySymbol = Symbol('mySymbol');
+            // document.write("Value of mySymbol = "+mSymbol);
+            // document.write('<br/>');
+
+            // Object
+            var obj = {
+                key1: 'value',
+                key2: 'value',
+                key3: true,
+                key4: 32,
+                key5: {}
+            }
+            document.write('<br/>');
+            document.write('<br/>');
+            document.write("<b>Object Type Values:</b>");
+            document.write('<br/>');
+            document.write("Value of key1 in obj = "+obj.key1);
+            document.write('<br/>');
+            document.write("Value of key2 in obj = "+obj.key2);
+            document.write('<br/>');
+            document.write("Value of key3 in obj = "+obj.key3);
+            document.write('<br/>');
+            document.write("Value of key4 in obj = "+obj.key4);
+            document.write('<br/>');
+            document.write("Value of key5 in obj = "+obj.key5);
+        </script>
+    </body>
+</html>
