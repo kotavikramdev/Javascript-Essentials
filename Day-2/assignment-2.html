@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-2 Assignment-2</title>
+</head>
+<body>
+    <h1>Day-2 Assignment-2</h1>
+    <h2>String and Array Methods</h2>
+    <div style="float: left;margin: 0 2%;">
+        <h3>String Methods:</h3>
+        <ul>
+            <li>str.length</li>
+            <li>str.indexOf()</li>
+            <li>str.lastIndexOf()</li>
+            <li>str.search()</li>
+            <li>str.slice()</li>
+            <li>str.substring()</li>
+            <li>str.substr()</li>
+            <li>str.replace()</li>
+            <li>str.toUpperCase()</li>
+            <li>str.toLowerCase()</li>
+            <li>str.concat()</li>
+            <li>str.trim()</li>
+            <li>str.charAt()</li>
+            <li>str.charCodeAt()</li>
+            <li>str.split()</li>
+        </ul>
+    </div>
+    <div style="display: inline-block;margin: 0 2%;">
+        <h3>Array Methods:</h3>
+        <ul>
+            <li>arr.toString()</li>
+            <li>arr.join()</li>
+            <li>arr.pop()</li>
+            <li>arr.push()</li>
+            <li>arr.shift()</li>
+            <li>arr.unshift()</li>
+            <li>arr.length</li>
+            <li>arr.splice()</li>
+            <li>arr.concat()</li>
+            <li>arr.slice()</li>
+        </ul>
+    </div>
+    <script>
+        // String Methods
+        console.log("%c String Methods and its outputs:","color:blue;font-size:18px;");
+
+        // str.length returns the length of a string
+        var text = "Learning Javascript-Essentials is very much interesting";
+        console.log("Length of text:",text.length);
+
+        // str.indexOf() returns the index of the first occurrence of specified text in a string
+        console.log("Index of 'Essentials' in text:",text.indexOf("Essentials"));
+
+        // str.lastIndexOf() returns the index of the last occurrence of a specified text in a string
+        var text2 = "Take chance when you have chance";
+        console.log("Last occurence index of 'chance' in text:",text2.lastIndexOf('chance'));
+
+        // str.search() searches a string for a specified value and returns the position
+        console.log("Position of 'Javascript' in text:", text.search('Javascript'));
+
+        // str.slice() returns the part of string
+        console.log(text.slice(9,19));
+
+        // str.substring() and str.substr() will slice out the rest of the string
+        console.log(text.substring(9,19));
+        console.log(text.substr(20,10));
+
+        // str.replace() replaces a specified value with another value in a string
+        console.log(text.replace("Javascript","Java Script"));
+
+        // str.toUpperCase() converts string to upper case letters
+        var text3 = "Welcome Javscript";
+        console.log(text3.toUpperCase());
+
+        // str.toLowerCase() converts string to lower case letters
+        console.log(text3.toLowerCase());
+
+        // str.concat() joins two or more strings.
+        console.log("Hello".concat("! ","Welcome"," ","Javascript"));
+
+        // str.trim() method removes whitespace from both sides of a string
+        console.log("       Hi There!  ".trim());
+
+        // str.charAt() returns the character at a specified index in a string
+        console.log("Hello Javascript".charAt(6));
+
+        // str.charCodeAt() returns the unicode of the character at a specified index in a string
+        console.log("Hello Javascript".charCodeAt(6));
+
+        // str.split() converts string into array
+        console.log("Mango,Banana,Apple".split(","));
+
+
+        // Array Methods
+        console.log("%c Array Methods and its outputs:","color:blue;font-size:18px;");
+
+        // arr.toString() converts an array to a string of array values.
+        console.log(["Mango","Banana","Apple"].toString());
+
+        // arr.join() joins all array elements into a string
+        console.log(["Mango","Banana","Apple"].join(" | "));
+
+        // arr.pop() removes the last element from an array
+        var professions = ["Technician","Developer","Teacher","Manager","Administrator"];
+        console.log(professions.pop());
+
+        // arr.push() adds a new element at the end of an array
+        professions.push("Student");
+        console.log(professions); 
+
+        // arr.shift() removes the first array element and shifts all other elements to a lower index
+        professions.shift();
+        console.log(professions);
+
+        // arr.unshift() adds a new element at the beginning of an array and unshifts older elements
+        professions.unshift("Technician");
+        console.log(professions);
+
+        // arr.length returns the number of array elements
+        console.log(professions.length);
+
+        // arr.splice() used to add new items to an array and also to remove array elements 
+        professions.splice(2,0,"Executive Officer");
+        console.log(professions);
+
+        // arr.concat() returns a new array by concatenating the given arrays
+        console.log(['Apple','Banana'].concat(['Watermelon']));
+
+        // arr.slice() slices out a piece of an array into a new array
+        console.log(professions.slice(2,5));
+    </script>
+</body>
+</html>
