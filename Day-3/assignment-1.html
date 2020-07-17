@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-3 Assignment-1</title>
+</head>
+<body>
+    <h1>Day-3 Assignment-1</h1>
+    <h2>JS code which takes input number from user and function checks whether number is even or odd and display the result in console.</h2>
+    <h3>Check the output in console</h3>
+    <script defer>
+        function evenOrOdd(num) {
+            if (num % 2 == 0) {
+                return "Even.";
+            }
+            else {
+                return "Odd.";
+            }
+        }
+        var number = prompt("Enter the number: ");
+        var result = evenOrOdd(number);
+        console.log("The number entered is", number, "and Number is",result);
+    </script>
+</body>
+</html>

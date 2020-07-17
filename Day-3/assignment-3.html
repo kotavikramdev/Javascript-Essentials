@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-3 Assignment-3</title>
+</head>
+<body>
+    <h1>Day-3 Assignment-3</h1>
+    <h2>JS code which takes marks as input and display the grade in console.</h2>
+    <h3>Check the output in console</h3>
+    <script defer>
+        var marks = prompt('Enter the student marks:');
+        // Using Conditional Statements.
+        var grade;
+        if (marks>70 && marks<=100) {
+            grade = 'A';
+        }
+        else if (marks>40 && marks<=70) {
+            grade = 'B';
+        }
+        else if (marks>20 && marks<=40){
+            grade = 'C';
+        }
+        else {
+            grade = 'D';
+        }
+        console.log("Marks are",marks,"and grade is",grade);
+
+        // Using Ternary Operators.
+        grade = (marks>70 && marks<=100)?'A':((marks>40 && marks<=70)?'B':((marks>20 && marks<=40)?'C':'D'));
+        console.log("Marks are",marks,"and grade is",grade);
+
+        // Using switch.
+        switch(true) {
+            case (marks>70 && marks<=100):
+                console.log("Marks are",marks,"and grade is",'A');
+                break;
+            case (marks>40 && marks<=70):
+                console.log("Marks are",marks,"and grade is",'B');
+                break;
+            case (marks>20 && marks<=40):
+                console.log("Marks are",marks,"and grade is",'C');
+                break;
+            case (marks<=20): 
+                console.log("Marks are",marks,"and grade is",'D');
+                break;
+            default: 
+                console.log("Invalid");
+                break;
+        }
+    </script>
+</body>
+</html>
