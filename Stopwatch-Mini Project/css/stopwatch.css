@@ -1,0 +1,85 @@
+body {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 0;
+    text-shadow: 2px 2px red;
+    font-family: cursive, sans-serif; 
+    font-style: italic;
+    font-size: 300%;
+}
+
+#input {
+    margin: 20px auto;
+    width: 300px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px red;
+}
+
+label {
+    text-shadow: 1px 1px red;
+    font-size: 18px;
+    color: black;
+    font-family: tahoma;
+    font-weight: bold;
+}
+
+#stopwatch {
+    background-image: url('../images/watch.png');
+    background-size: 414px 500px;
+    height: 460px;
+    width: 414px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px red;
+}
+
+.watch {
+    height: 500px;
+    width: 414px;
+    padding-top: 170px;
+}
+
+.timer {
+    width: 150px;
+    height: 30px;
+    padding: 12px 10px 10px 10px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #eee;
+    text-align: center;
+    box-shadow: 0 0 5px #ccc;
+    background: #fbfbf0;
+    border-bottom: 4px solid darkgrey;
+}
+
+button { 
+    color:black;
+    font-weight: bold;
+    cursor: pointer; 
+    width: 170px;
+    border-radius: 5px;
+}
+
+#counter {
+    margin: 0 auto;
+    text-shadow: 1px 1px red;
+    font-size: 25px;
+    color: black;
+    font-family: tahoma;
+    font-weight: bold;
+}
+    
+.timertext {
+    margin: 0 auto;
+    text-shadow: 1px 1px red;
+    color: black;
+    font-family: tahoma;
+    font-weight: bold;
+}
